@@ -17,14 +17,7 @@
 	<!--使用dubbo协议，将服务暴露在20880端口 -->
 	<dubbo:protocol name="dubbo" port="20881"></dubbo:protocol>
 
-	<!-- 声明要暴露的实现类的对象 -->
-<!--	<bean id="userService"-->
-<!--		class="com.sxt.service.impl.UserServiceImpl"></bean>-->
-	<!-- 进行服务暴露 -->
-<!--	<dubbo:service interface="com.sxt.service.UserService"-->
-<!--		ref="userService"></dubbo:service>-->
 
 	<!--扫描-->
 	<dubbo:annotation package="com.sxt.service.impl"/>
-<!--	<context:component-scan base-package="com.sxt.service.impl"/>  &lt;!&ndash;扫描srping的service&ndash;&gt;-->
 </beans>
